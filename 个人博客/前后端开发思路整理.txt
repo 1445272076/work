@@ -1,0 +1,34 @@
+﻿1. 前台
+    提供给用户浏览的 
+
+    接口
+    |
+    |-- <get> '/' 提供首页
+    |
+    |-- <get> '/p' 提供某一篇文章浏览
+    | 
+    |-- <post> '/submitComment' 用户提交评论
+
+2. 后台
+    提供给管理者管理数据
+    |
+    |-- <get> '/admin/' 后台管理首页
+    |
+    |-- <get> '/admin/login' 管理员登录界面
+    |
+    |-- <post> '/admin/login' 登录接口
+    |
+    |-- <post> '/admin/uploadPage' 管理员提交文章
+    |
+    |-- <get> '/admin/getComment'  获取评论
+    |
+    |-- <get> '/admin/passComment' 通过某个评论
+    |
+    |-- <get> '/admin/nopassComment' 不通过某个评论
+
+
+i. 前端
+    负责提供页面
+
+ii. 后端
+    负责处理数据
